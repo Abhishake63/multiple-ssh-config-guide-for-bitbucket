@@ -50,4 +50,4 @@ When cloning repositories, replace the default host with the configured host:
   ```
 
 Ensure to replace `bitbucket.org` with the appropriate configured host. You're all set! This setup allows you to work with multiple Bitbucket accounts on a single device seamlessly.
-```
+
