@@ -7,14 +7,24 @@
    ssh-keygen -t ed25519 -b 4096 -C "john.doe@softwarecompany.com" -f ~/.ssh/softwarecompany
    ```
 
-2. Add the generated public key (`softwarecompany.pub`) to the Bitbucket account's SSH settings.
+2. Add each private key to the SSH agent, such as:
+   ```bash
+   ssh-add ~/.ssh/softwarecompany
+   ```
 
-3. Generate SSH key for Tech Company account:
+3. Add the generated public key (`softwarecompany.pub`) to the Bitbucket account's SSH settings.
+
+4. Generate SSH key for Tech Company account:
    ```bash
    ssh-keygen -t ed25519 -b 4096 -C "john.doe@techcompany.com" -f ~/.ssh/techcompany
    ```
 
-4. Add the generated public key (`techcompany.pub`) to the Bitbucket account's SSH settings.
+5. Add each private key to the SSH agent, such as:
+   ```bash
+   ssh-add ~/.ssh/techcompany
+   ```
+
+6. Add the generated public key (`techcompany.pub`) to the Bitbucket account's SSH settings.
 
 ## Configure SSH Config File
 
